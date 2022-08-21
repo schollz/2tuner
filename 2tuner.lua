@@ -19,9 +19,10 @@ function math.average(t)
 end
 
 function init()
-  for i=1,4 do 
-    crow.output[i].volts=2
-  end
+  crow.output[1].volts=4
+  crow.output[2].volts=10
+  crow.output[3].volts=4
+  crow.output[4].volts=10
   local p={0,0}
   local it={10,10}
   for i,v in ipairs({"pitch_in_l","pitch_in_r"}) do 
